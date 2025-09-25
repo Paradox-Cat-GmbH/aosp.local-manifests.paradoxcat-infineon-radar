@@ -1,6 +1,6 @@
 # aosp.local-manifests.paradoxcat-infineon-radar
 
-local_manifests which manages all AOSP repositories at Paradox Cat related to Infineon Radars.
+local_manifests repository that manages all AOSP repositories at Paradox Cat related to Infineon Radars.
 
 ## How to use
 
@@ -15,7 +15,7 @@ $ repo sync -c
 
 ### Step 2: Obtain Infineon Radar Development Kit and build its libraries from source code
 
-Due to absence of any license terms, we can not redistribute the Infineon Radar Development Kit.
+Due to absence of any license terms, we cannot redistribute the Infineon Radar Development Kit.
 
 Download is available after account creation here: [Infineon Developer Center](https://softwaretools.infineon.com/tools/com.ifx.tb.tool.ifxradarsdk)
 
@@ -39,7 +39,7 @@ To see the logs from Infineon libraries, you must build the **debug** versions.
 * Copy all `*.so` files to `vendor/infineon/hardware/interfaces/radar/prebuilt/libs/`
 * Copy all `include` directories to `vendor/infineon/hardware/interfaces/radar/prebuilt/include/`
 
-This is the structure what we expect as of RDK version 3.5.1:
+This is the structure that we expect as of RDK version 3.5.1:
 
 ```
 vendor/infineon/hardware/interfaces/radar/aidl/prebuilt$ tree
@@ -76,7 +76,7 @@ Also, please check if `ifxAvian/DeviceConfig.h` still corresponds to `vendor/inf
 
 ### Step 4: Add HAL and system service to the device configuration
 
-Locate your `device.mk` file, e.g., `device/samsung/gts4lv-common/gts4lv.mk` and add following lines to it:
+Locate your `device.mk` file, e.g., `device/samsung/gts4lv-common/gts4lv.mk` and add the following lines to it:
 
 ```make
 # Infineon Radar HAL
@@ -91,7 +91,7 @@ PRODUCT_PACKAGES += \
 
 ### Step 5: Ensure that USB permissions are set correctly
 
-Locate your `ueventd.rc` overlay file, e.g. `device/samsung/gts4lv-common/init/ueventd.qcom.rc`, and add following lines to it:
+Locate your `ueventd.rc` overlay file, e.g. `device/samsung/gts4lv-common/init/ueventd.qcom.rc`, and add the following lines to it:
 
 ```make
 # Infineon sensor
@@ -106,7 +106,7 @@ $ adb shell ls -l /dev/ttyACM0
 
 ### Step 6: Add Infineon HAL to your Device Framework Compatibility Matrix
 
-Locate your `framework_compatibility_matrix.xml`, e.g., `device/samsung/gts4lv-common/framework_compatibility_matrix.xml` and add following lines to it:
+Locate your `framework_compatibility_matrix.xml`, e.g., `device/samsung/gts4lv-common/framework_compatibility_matrix.xml` and add the following lines to it:
 
 ```xml
 <hal format="aidl" optional="true">
