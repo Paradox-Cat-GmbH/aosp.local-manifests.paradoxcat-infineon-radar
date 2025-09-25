@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="vendor/infineon/hardware/interfaces/radar" remote="github" name="Paradox-Cat-GmbH/aosp.vendor.infineon.hardware.interfaces.radar" revision="main" />
+  <project path="packages/services/paradoxcat/infineon-radar-service" remote="github" name="Paradox-Cat-GmbH/aosp.packages.services.paradoxcat.infineon-radar-service" revision="main" />
+  <project path="external/litert" remote="github" name="Paradox-Cat-GmbH/aosp.external.litert" revision="main" />
+</manifest>
