@@ -15,7 +15,7 @@ $ repo sync -c
 
 ### Step 2: Obtain Infineon Radar Development Kit and build its libraries from source code
 
-Due to abscence of any license terms, we can not redistribute the Infineon Radar Development Kit. 
+Due to absence of any license terms, we can not redistribute the Infineon Radar Development Kit.
 
 Download is available after account creation here: [Infineon Developer Center](https://softwaretools.infineon.com/tools/com.ifx.tb.tool.ifxradarsdk)
 
